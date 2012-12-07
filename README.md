@@ -28,7 +28,7 @@ This example contains two paths in SNIP\_PATH. All snippets of /home/user/snippe
 priorized. Please use absolute paths for your SNIP\_PATH. (Oh and by the way: The SNIP\_PATH is
 stored in ~/.config/snip.py/settings.py.)
 
-Now let's check what snippets are avialable to us:
+Now let's check which snippets are avialable to us:
 
 	$ snip.py /
 	DIR more_snippets
@@ -45,7 +45,7 @@ of the file on the terminal, too:
 	$ snip.py /snippet_1.py
 	...
 
-Maybe we don't want to copy snippet1.py but look inside the folder more\_snippets:
+Maybe we don't want to copy snippet\_1.py but look inside the folder more\_snippets:
 
 	$ snip.py /more_snippets
 	a.py
