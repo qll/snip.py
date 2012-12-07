@@ -1,0 +1,14 @@
+body {
+	margin:0;
+	padding:0;
+	font-family:Verdana,sans;
+}
+img {
+	border:0;
+}
+a {
+	outline:0;
+}
+a:hover {
+	text-decoration:none;
+}
