@@ -41,7 +41,7 @@ if not os.path.isfile(CFG_PATH + 'settings.py'):
 		os.makedirs(CFG_PATH)
 	with open(CFG_PATH + 'settings.py', 'w') as f:
 		current_dir = os.path.dirname(os.path.realpath(__file__))
-		f.write(STANDARD_CFG.format(file_path=current_dir))
+		f.write(STANDARD_CFG.format(file_path=current_dir + '/snippets/'))
 from settings import *
 
 
