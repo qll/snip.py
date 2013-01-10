@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import socket
+ 
+
+ADDR = ('localhost', 7777)
+MESSAGE = 'asdf'
+
+
+def main():
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.connect(ADDR)
+	s.sendall(MESSAGE)
+	print(s.recv(1024))
+
+
+if __name__ == '__main__':
+	main()
