@@ -31,6 +31,14 @@ def fill_snippets(path, snippets):
 			snippets[file_or_dir] = path + file_or_dir
 
 
+def ansi_bold(text):
+	return '\033[1m{0}\033[0m'.format(text)
+
+def ansi_color(text, color):
+	return '\033[{0}m{1}\033[0m'.format(color, text)
+
+
+
 # first start logic and loading settings
 CFG_PATH = os.path.expanduser(CFG_PATH)
 sys.path.append(CFG_PATH)
@@ -72,7 +80,7 @@ for path in sys.argv[1].split('/'):
 		sys.exit(1)
 	current_path = current_path[path]
 if isinstance(current_path, dict):
-	print('\n'.join('DIR ' + k if isinstance(current_path[k], dict) else k for k in current_path))
+	print('\t'.join(ansi_color(ansi_bold(k), 31) + '/' if isinstance(current_path[k], dict) else k for k in current_path))
 elif len(sys.argv) > 2:
 	try:
 		shutil.copyfile(current_path, sys.argv[2])
