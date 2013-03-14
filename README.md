@@ -6,7 +6,7 @@ You can store your code snippets in a directory somewhere on your machine, point
 it and you are done. Now you can use snip.py's selector syntax to retrieve the snippets quick
 and easy.
 
-snip.py runs with Python 2.7 or 3 on UNIX systems. It is released under a BSD license.
+snip.py runs with Python 2.7 or 3 on UNIX systems. It is released under a MIT license.
 
 Installation
 ------------
